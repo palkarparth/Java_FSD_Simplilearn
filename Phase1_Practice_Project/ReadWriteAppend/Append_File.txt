@@ -1,0 +1,1 @@
+Java append to file is a common java IO operation. For example, whenever we print something to server logs, it gets appended to the existing file.
