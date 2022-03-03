@@ -7,7 +7,8 @@ import java.util.Scanner;
 public class AddFiles {
 	private void addingFiles() {
 		Scanner scanner = new Scanner(System.in);
-		String fileDirectory = "D:\\LockerFiles";
+		String fileDirectory = "D:\\LockerFiles\\";
+		System.out.println("Adding files......");
 		System.out.print("Enter name of a file you want to add->");
 		String newFile = scanner.nextLine();
 		newFile.equalsIgnoreCase(newFile);

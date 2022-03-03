@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class BusinessLevelOperation {
 	private void businessLevelOperation() {
-		String fileDirectory = "D:\\LockerFiles";
+		String fileDirectory = "D:\\LockerFiles\\";
 		File files = new File(fileDirectory);
-		System.out.println("1.Add Files\n" + "2.Delete Files\n" + "3.Search Files\n" + "4.Main Menu\n");
+		System.out.println("\n1.Add Files\n" + "2.Delete Files\n" + "3.Search Files\n" + "4.Main Menu\n");
 		System.out.print("Enter your choice->");
 		Scanner scanner = new Scanner(System.in);
 		int choice = scanner.nextInt();
@@ -16,6 +16,7 @@ public class BusinessLevelOperation {
 		case 1:
 			AddFiles addFiles = new AddFiles();
 			addFiles.display();
+			businessLevelOperation();
 			break;
 		case 2:
 
@@ -24,7 +25,8 @@ public class BusinessLevelOperation {
 
 			break;
 		case 4:
-
+			WelcomeScreen welcomeScreen = new WelcomeScreen();
+			welcomeScreen.display(); // displaying main menu
 			break;
 
 		default:
