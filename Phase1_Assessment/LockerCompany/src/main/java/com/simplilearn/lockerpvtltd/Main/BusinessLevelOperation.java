@@ -15,21 +15,29 @@ public class BusinessLevelOperation {
 		switch (choice) {
 		case 1:
 			AddFiles addFiles = new AddFiles();
-			addFiles.display();
-			businessLevelOperation();
+			addFiles.display(); // displaying add file class
+			display(); // displaying business level operation class
 			break;
+
 		case 2:
-
+			DeleteFile deleteFile = new DeleteFile();
+			deleteFile.display(); // displaying delete file class
+			display(); // displaying business level operation class
 			break;
+
 		case 3:
-
+			SearchFiles searchFile = new SearchFiles();
+			searchFile.display(); // displaying search file class
+			display(); // displaying business level operation class
 			break;
+
 		case 4:
 			WelcomeScreen welcomeScreen = new WelcomeScreen();
 			welcomeScreen.display(); // displaying main menu
 			break;
 
 		default:
+			System.out.println("Please enter valid input.");
 			break;
 		}
 	}

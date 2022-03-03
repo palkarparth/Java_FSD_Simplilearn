@@ -27,10 +27,13 @@ public class WelcomeScreen {
 			businessLevelOperation.display(); // display add files, delete files, search files, main menu
 			break;
 		case 3:
-
+			System.out.println("Thanks for using Locker Application");
+			System.out.println("Closing your application..........");
+			System.out.println("--------------------------------------------------");
 			break;
 
 		default:
+			System.out.println("Please enter valid input.");
 			break;
 		}
 	}
