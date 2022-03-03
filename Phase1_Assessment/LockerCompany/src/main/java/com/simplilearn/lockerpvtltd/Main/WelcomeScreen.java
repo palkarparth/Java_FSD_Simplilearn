@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class WelcomeScreen {
 	private void selectChoice() {
 		// Code for Welcome Screen
-
 		Scanner scanner = new Scanner(System.in); // Scanner class
 		System.out.println("====================Main Menu====================\n" + "1.Retrive files\n"
 				+ "2.Businees level operation on files:-\n" + "  i.Add files\n" + "  ii.Delete files\n"
@@ -24,7 +23,8 @@ public class WelcomeScreen {
 			break;
 
 		case 2:
-
+			BusinessLevelOperation businessLevelOperation = new BusinessLevelOperation();
+			businessLevelOperation.display(); // display add files, delete files, search files, main menu
 			break;
 		case 3:
 
