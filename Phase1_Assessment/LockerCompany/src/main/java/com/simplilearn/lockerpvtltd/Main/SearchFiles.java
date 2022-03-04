@@ -11,6 +11,7 @@ public class SearchFiles {
 		System.out.println("--------------------------------------------------");
 		System.out.print("Enter name of a file you want to search->");
 		String searchFile = scanner.nextLine();
+		searchFile.contentEquals(searchFile);
 		searchFile = searchFile + ".txt";
 		File files = new File(fileDirectory + searchFile);
 		boolean ifExists = files.exists();

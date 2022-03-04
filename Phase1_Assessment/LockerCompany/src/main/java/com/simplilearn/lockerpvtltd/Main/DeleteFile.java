@@ -11,6 +11,7 @@ public class DeleteFile {
 		System.out.println("--------------------------------------------------");
 		System.out.print("Enter name of a file you want to delete->");
 		String deleteFile = scanner.nextLine();
+		deleteFile.contentEquals(deleteFile);
 		deleteFile = deleteFile + ".txt";
 		File files = new File(fileDirectory + deleteFile);
 		boolean ifFileFound = files.delete();

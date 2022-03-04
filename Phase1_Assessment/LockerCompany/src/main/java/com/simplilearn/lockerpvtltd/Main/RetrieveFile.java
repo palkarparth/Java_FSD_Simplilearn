@@ -5,7 +5,7 @@ import java.io.File;
 public class RetrieveFile {
 
 	private void retrieveFile() {
-		String fileDirectory = "D:\\LockerFiles\\";
+	    String fileDirectory = "D:\\LockerFiles\\";
 		File files = new File(fileDirectory);
 		int count = 1;
 		String fileList[] = files.list();
