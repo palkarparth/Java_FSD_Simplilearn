@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+    <script>
+
+        function f1(a1,a2) {
+            return a1*a2;
+        }
+
+        console.log(f1(9,3));
+        // var sum = function (num1, num2) {
+        //     return num1 + num2;
+        // }
+
+        var add = (n1,n2) => n1+n2; // Arrow function
+        var add = (n1,n2) => {
+            console.log('This ia arrow function');
+            return n1+n2
+        };
+
+        console.log(add(4,9));
+
+        function myFunc(...n1) { // rest or spread param or n1[]
+            console.log('I am rest param function');
+            return n1[0] + n1[1] + n1[2] + n1[3];
+        }
+
+        var result = myFunc(2,7,9,4);
+        console.log(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

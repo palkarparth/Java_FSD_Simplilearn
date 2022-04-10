@@ -1,0 +1,9 @@
+table {
+    border-style: dotted;
+    background-color: coral;
+}
+
+#bid {
+    color: red;
+    background-color: lightgreen;
+}

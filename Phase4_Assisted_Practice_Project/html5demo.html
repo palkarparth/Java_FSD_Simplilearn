@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+        function find() {
+            var element = document.getElementById("dob").value;
+            alert(element);
+            document.getElementById("age").value = 55;
+
+
+        }
+
+        function getAge() {
+            var dob = document.getElementById("dob").value;
+            var date = new Date(dob);
+            let age = 2022 - date.getFullYear();
+            document.getElementById("age").value = age;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container col-md-3">
+        <form class="form" action="">
+            Name: <input type="text" name="uname" id="uid" required="required" placeholder="Enter name"
+                class="form-control">
+            Password: <input type="password" name="password" id="password" required="required"
+                placeholder="Enter password" class="form-control">
+            DOB: <input type="date" name="date" id="dob" required="required" class="form-control">
+            Age: <input type="number" name="age" id="age" onfocus="getAge()" required="required" class="form-control">
+            Email: <input type="email" name="email" id="email" required="required" placeholder="Enter email"
+                class="form-control">
+            Account: <input type="number" name="amount" id="amount" required="required" placeholder="Enter amount"
+                class="form-control">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+            <!-- <button type="button" onclick="newKeyword()" class="btn btn-primary">New Keyword</button> -->
+        </form>
+    </div>
+</body>
+
+</html>
